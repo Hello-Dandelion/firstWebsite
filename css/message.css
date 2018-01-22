@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font: 14px "微软雅黑";
+}
+.leftmsg .shareimg{
+	float:left;
+	display: block;
+	width: 100%;
+}
+.leftmsg .formmsg{
+	margin-top: 10px;
+	width: 100%;
+}
+.leftmsg .text{
+	float: left;
+	padding: 1%;
+	width: 85%;
+	border: 1px solid #eee;
+}
+.leftmsg .send{
+	float: right;
+	width: 15%;
+	border: 1px solid #77B00A;
+	color: #fff;
+	background: #33c501;
+}
+.leftmsg .sharecontent{
+	clear: both;
+	width: 100%;
+	border: 1px solid #eee;
+	border-top: none;
+	overflow: hidden;
+}
+.leftmsg .sharecontent li{
+	padding-top: 10px;
+	margin-left: 10px;
+	border-bottom: 1px dashed #eee;
+	color: #1784F3;
+}
+.leftmsg .sharecontent li p.msgp{
+	font-size: 15px;
+	color: #555;
+}
+@media (max-width: 2000px) and (min-width:767px){
+	.leftmsg{
+		float: left;
+		margin-left: 5%;
+		width: 63%;
+		height: auto;
+	}
+	
+	.leftmsg .text{
+		height: 100px;
+		font-size: 16px;
+	}
+	.leftmsg .send{
+		height: 100px;
+		font-size: 22px;
+	}
+	.leftmsg .sharecontent li{
+		font-size: 13px;
+	}
+	.leftmsg .sharecontent li p{
+		line-height: 25px;
+		color: #222;
+		font-size: 14px;
+	}
+	
+}
+@media (max-width: 920px) and (min-width:767px){
+	.leftmsg .text{
+		height: 80px;
+		font-size: 16px;
+	}
+	.leftmsg .send{
+		height: 80px;
+		font-size: 20px;
+	}
+}
+@media (max-width: 767px) and (min-width:360px){
+	.leftmsg{
+		float: left;
+		margin-left: 5%;
+		width: 90%;
+		height: auto;
+	}
+	.leftmsg .text{
+		height: 60px;
+	}
+	.leftmsg .send{
+		height: 60px;
+		font-size: 18px;
+	}
+}

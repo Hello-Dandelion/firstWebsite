@@ -1,0 +1,243 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font: 14px "微软雅黑";
+}
+.leftmsg .area{
+	position: relative;
+}
+.leftmsg .area p.classify{
+	/*margin-top: 10px;*/
+	width: 20%;
+	text-align: center;
+	background: #ccc;
+}
+.leftmsg .area p.hr{
+	position: relative;
+	top: -10px;
+	margin: 0 auto;
+	margin-left:0 ;
+	width: 100%;
+	height: 1px;
+	background: #ccc;
+}
+.leftmsg .area .areashow{
+	/*float: left;*/
+	position: relative;
+	top: -10px;
+}
+.leftmsg .area .areashow .subli{
+	width: 20%;
+	text-align: center;
+	border-left: 1px solid #eee;
+	color: #666;
+	background: #F8F8F8;
+}
+.leftmsg .area .areashow .subli:hover{
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	color: #444;
+	background: #fff;
+}
+.leftmsg .area .areashow .subli .provinces{
+	display: none;
+	position: absolute;
+	left: 20%;
+	top: 0;
+	z-index: 9999;
+	padding-right: 15px;
+	width: auto;
+	border: 1px solid #eee;
+	border-left: none;
+	background: #fff;
+}
+.leftmsg .area .areashow .subli .provinces li{
+	float: left;
+}
+.leftmsg .area .areashow .subli .provinces li a{
+	color: #666;
+	text-decoration: none;
+}
+.leftmsg .area .areashow .subli .provinces li a:hover{
+	font-size: 15px;
+	color: #77B00A;
+	text-decoration: underline;
+}
+
+.leftmsg embed{
+	width: 80%;
+	height: 85.7%;
+}
+
+.leftmsg .viewspot{
+	color: #0042ff;
+}
+.leftmsg .panel-heading{
+	background: #f8f8f8;
+}
+.leftmsg .panel-heading:hover{
+	background: #eee;
+}
+.leftmsg .panel-title a{
+	text-decoration: none;
+	color: #888;
+}
+.leftmsg .panel-title a:hover{
+	color: #444;
+}
+/*.leftmsg .panel-title a .number{
+	color: orangered;
+}*/
+.leftmsg .panel-body img{
+	float: left;
+	width: 70%;
+	margin-right: 10px;
+}
+.leftmsg .panel-body p{
+	width: auto;
+	color: #444;
+	word-break: break-all;
+	text-indent: 2em;
+}
+.leftmsg .panel-body ul{
+	height: auto;
+	border: 1px solid #77B00A;
+}
+.leftmsg .panel-body ul li{
+	margin-left: 5%;
+	line-height: 22px;
+}
+.leftmsg .panel-body ul li span.one{
+	color: #888;
+	border-bottom: 1px dashed #ccc;
+}
+.leftmsg .panel-body ul li span.two{
+	color: #444;
+	border-bottom: 1px dashed #ccc;
+}
+@media (max-width: 2000px) and (min-width:767px){
+	.leftmsg{
+		float: left;
+		margin-left: 5%;
+		width: 63%;
+		height: auto;
+	}
+	.leftmsg .area p.classify{
+		/*margin-top: 10px;*/
+		height: 40px;
+		line-height: 40px;
+		font-size: 16px;
+		border-radius: 5px;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+	.leftmsg .area .areashow .subli{
+		height: 45px;
+		line-height: 45px;
+		font-size: 15px;
+	}
+	
+	.leftmsg .area .areashow .subli .provinces{
+		height: 45px;
+	}
+	.leftmsg .area .areashow .subli .provinces li{
+		margin-left: 15px;
+		line-height: 45px;
+	}
+	
+	.leftmsg embed{
+		position: absolute;
+		left: 20%;
+		top: 52px;
+	}
+	
+	.leftmsg p{
+		/*clear: both;*/
+		font-size: 18px;
+	}
+	.leftmsg .viewspot{
+		font-size: 18px;
+	}
+	.leftmsg .panel-title a{
+		font-size: 16px;
+	}
+	.leftmsg .panel-body img{
+		margin-right: 10px;
+	}
+	.leftmsg .panel-body p{
+		/*font-size: 15px;*/
+		line-height: 22px;
+	}
+	.leftmsg .panel-body ul{
+		padding: 15px 0;
+		border-radius: 5px;
+	}
+	
+}
+@media (max-width: 767px) and (min-width:360px){
+	.leftmsg{
+		float: left;
+		margin-left: 5%;
+		width: 90%;
+		height: auto;
+	}
+	.leftmsg .area p.classify{
+		/*margin-top: 10px;*/
+		height: 40px;
+		line-height: 40px;
+		font-size: 15px;
+		border-radius: 4px;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+	
+	.leftmsg .area .areashow .subli{
+		height: 40px;
+		line-height: 40px;
+		/*font-size: 15px;*/
+	}
+	.leftmsg .area .areashow .subli .provinces{
+		height: 40px;
+	}
+	.leftmsg .area .areashow .subli .provinces li{
+		margin-left: 12px;
+		line-height: 40px;
+	}
+	.leftmsg .area .areashow .subli .provinces li a:hover{
+		font-size: 15px;
+	}
+	
+	.leftmsg embed{
+		position: absolute;
+		left: 20%;
+		top: 42px;
+	}
+	
+	
+	.leftmsg p{
+		font-size: 16px;
+	}
+	.leftmsg .viewspot{
+		font-size: 16px;
+	}
+	/*.leftmsg .panel-title a{
+		font-size: 14px;
+	}*/
+	.leftmsg .panel-body img{
+		margin-right: 10px;
+		width: 35%;
+	}
+	.leftmsg .panel-body p{
+		/*font-size: 14px;*/
+		line-height: 20px;
+	}
+	.leftmsg .panel-body ul{
+		padding: 10px 0;
+		border-radius: 4px;
+	}
+	.leftmsg .panel-body ul li{
+		margin-left: 5%;
+		line-height: 22px;
+	}
+}

@@ -1,0 +1,210 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font: 14px "微软雅黑";
+}
+.left{
+	float: left;
+	margin-left: 5%;
+	height: auto;
+	border: 1px solid #eee;
+	}
+.left .titleart{
+	color: #1784f3;
+	margin: 20px auto;
+	text-align: center;
+}
+.left .msg .author{
+	color: #06c;
+}
+.left .msg{
+	margin-bottom: 10px;
+	text-align: center;
+}
+.left .hr{
+	width: 92%;
+	height: 1px;
+	background: #eee;
+}
+.left .content{
+	margin: 10px auto;
+	width: 92%;
+	height: auto;
+}
+.left .content img {
+	display: block;
+	margin: 10px auto;
+	width: 80%;
+}
+.left .content p{
+	line-height: 22px;
+	text-indent: 2em;
+	text-align: justify;
+}
+.left .notices{
+	margin: 50px auto;
+	width: 92%;
+	height: 30px;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 3px;
+	background: #eee;
+}
+.left .notices:hover{
+	color: #fff;
+	background: #33c501;
+}
+.left .tage{
+	margin: 0 auto;
+	padding-left: 15px;
+	width: 92%;
+	background: url(../img/circle.png) no-repeat left center;
+}
+.left ul{
+	width: 92%;
+}
+.left ul li{
+	padding-left: 15px;
+	line-height: 30px;
+	background: url(../img/circlesmall.png) no-repeat left center;
+}
+
+
+.sharecon{
+	margin: 0 auto;
+	height: 45px;
+	text-align: center;
+	line-height: 40px;
+	color: #122B40;
+	border: 1px solid #30BC01;
+}
+
+.sharecon .sharea{
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.sharecon .sharea img{
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px rgba(44,44,44,0.6);
+	
+}
+
+
+.left textarea{
+	margin-top: 10px;
+	margin-left: 4%;
+	width: 92%;
+	border: 1px solid #eee;
+}
+.left .subtn{
+		margin-left: 4%;
+		width: 92%;
+		height: 35px !important;
+		background: #eee;
+}
+.left .subtn .submit{
+	float: right;
+	width: 80px;
+	height: 35px;
+	color: #fff;
+	background: #31AB01;
+}
+	
+
+
+
+@media (max-width: 2000px) and (min-width:767px){
+	.left{
+		width: 63%;
+	}
+	.left {
+		border-radius: 5px;
+		border: 1px solid #eee;
+	}
+	.left  .hr{
+		margin: 5px auto;
+	}
+	/*.left .content p{
+		font-size: 15px;
+	}*/
+	.left .tage{
+		font-size: 22px;
+	}
+	.left ul{
+		margin: 0 auto 50px;
+	}
+	.left textarea{
+		padding: 8px;
+		height: 160px;
+	}
+	.left .subtn{
+		position: relative;
+		top: -35px;
+		margin: 0 auto;
+		height: 30px;
+	}
+	.left .subtn input{
+		height: 31px;
+		border: none;
+	}
+	
+	.sharecon{
+		margin-bottom: 40px;
+		width: 60%;
+		font-size: 16px;
+	}
+	
+}
+@media (max-width: 767px) and (min-width:360px){
+	.left{
+		width: 90%;
+	}
+	.left .msg{
+		font-size: 10px;
+	}
+	.left .hr{
+		margin: 20px auto;
+	}
+	.left .content{
+		margin: 10px auto;
+	}
+	
+	.left .content p{
+		font-size: 14px;
+	}
+	
+	.left .notices{
+		margin: 50px auto;
+		border-radius: 3px;
+	}
+
+	.left .tage{
+		margin: 0 auto;
+		padding-left: 15px;
+		font-size: 18px;
+	}
+	.left ul{
+		margin: 0 auto 30px;
+	}
+	.left textarea{
+		padding: 5px;
+		margin-left: 4%;
+		height: 110px;
+		text-indent: 2em;
+	}
+	.left .subtn{
+		position: relative;
+		top: -35px;
+		height: 31px;
+	}
+	.left .subtn input{
+		height: 31px;
+		border: none;
+	}
+	.sharecon{
+		width: 70%;
+		margin-bottom: 50px;
+	}
+}

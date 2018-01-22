@@ -1,0 +1,371 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font: 14px "微软雅黑";
+}
+.rightmsg{
+	float:right;
+	margin-right: 5%;
+	width: 25%;
+}
+.rightmsg .showtime{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border: 2px solid #7ED528;
+	border-radius: 3px;
+	color: #555;
+}
+.rightmsg .hot{
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: 1px solid #eee;
+}
+.rightmsg .hot .tage{
+	padding-left: 5%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	border-bottom: 1px solid #eee;
+	background: #eee;
+}
+.rightmsg .hot .article{
+	height: auto;
+}
+.rightmsg .hot .article li{
+	padding-left: 5%;
+	color: #666;
+	border-bottom: 1px solid #eee;
+}
+.rightmsg .hot .article li:hover{
+	background: #eee;
+}
+.rightmsg .hot .article li a:nth-child(1){
+	display: block;
+	padding: 5px 0 ;
+	line-height: 22px;
+	color: #333;
+	width: 90%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis ;
+}
+.rightmsg .hot .article li a:hover{
+	color: #77B00A;
+	text-decoration: underline;
+}
+
+
+.rightmsg .hot .tags{
+	height: 340px;
+}
+.rightmsg .hot .tags li{
+	margin-top: 10px;
+	margin-left: 2%;
+	width: 96%;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #eee;
+	border-radius:3px ;
+	box-shadow: 1px 1px 1px #eee;
+}
+.rightmsg .hot .tags li .name{
+	margin-top: 8px;
+	float: left;
+	padding-left: 5px;
+	font-size: 16px;
+}
+.rightmsg .hot .tags li .hand{
+	margin-top: 7px;
+	float: right;
+	padding-right: 5px;
+}
+.rightmsg .hot .tags li:hover{
+	border: 1px solid #77B00A;
+	box-shadow: 1px 1px 1px #77B00A;
+}
+.rightmsg .hot .comment li{
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+}
+.rightmsg .hot .comment span.name{
+	margin-left: 5%;
+	color: #2CAD01;
+}
+.rightmsg .hot .comment p{
+	margin:5px 5%;
+	padding-bottom: 10px;
+	line-height: 20px;
+	color: #666;
+	border-bottom: 1px dashed #101010;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+@media (max-width: 2000px) and (min-width: 920px) {
+	.rightmsg .showtime{
+		font-size: 15px;
+	}
+	.rightmsg .hot .article li{
+		height: 60px;
+	}
+	.rightmsg .hot .article li a:nth-child(1){
+		font-size: 15px;
+	}
+}
+@media (max-width: 920px) and (min-width:767px){
+	.rightmsg .showtime{
+		font-size: 13px;
+	}
+	.rightmsg .hot .article li{
+		height: 35px;
+	}
+	.rightmsg .hot .article li a:nth-child(1){
+		font-size: 14px;
+	}
+	.rightmsg .hot .article li p:nth-child(2){
+		display: none;
+	}
+	.rightmsg .hot .comment li span.time{
+		display: none;
+	}
+	
+}
+@media (max-width: 767px) and (min-width:360px){
+	.rightmsg{
+		display: none;
+	}
+	
+	.nav-right{
+		display: none;
+	}
+	.active:hover{
+		background: #fff;
+	}
+	
+}
+
+
+.bg_mask{
+	display: none;
+	position: fixed;
+	top: 0;
+	z-index: 98;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+}
+/*.hidden{
+	width: 102%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}*/
+.bg_mask{
+	display: none;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+}
+.boxmsg{
+	display: none;
+	position: fixed;
+	top: 25%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 99;
+	overflow: hidden;
+	overflow-y: auto;
+	width: 400px;
+	height: 330px;
+	border-radius: 5px;
+	background: #38c10a;
+}
+.boxmsg .tab{
+	height: 60px;
+	border-radius: 5px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	background: #fff url(../img/logotab.png) no-repeat center;
+}
+.boxmsg .tab a{
+	display: block;
+	width: 80px;
+	height: 60px;
+	font-size: 18px;
+	line-height: 60px;
+	text-align: center;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	color: #555;
+	background: none;
+	text-decoration: none;
+}
+.boxmsg .tab .act{
+	display: block;
+	width: 80px;
+	height: 60px;
+	color: #2cad01;
+	font-size: 20px;
+}
+.boxmsg .tab #login{
+	position: absolute;
+	left: 30px;
+	top: 0;
+}
+.boxmsg .tab #register{
+	position: absolute;
+	left: 290px;
+	top: 0;
+}
+.boxmsg .myform{
+	margin: 65px 0;
+}
+.boxmsg .myform .inputs{
+	margin-left: 60px;
+	margin-bottom: 15px;
+	padding-left: 10px;
+	width: 240px;
+	height: 40px;
+	border-radius: 3px;
+	border: 1px solid #eee;
+}
+.boxmsg .myform .check{
+	position: absolute;
+	top: 235px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+}
+.boxmsg .myform .checkmsg{
+	position: absolute;
+	top: 233px;
+	margin-left: 85px;
+	line-height: 30px;
+	color: #f5f5f5;
+}
+.boxmsg .myform .goouter{
+	position: absolute;
+	top: 142px;
+	left: 280px;
+	width: 65px;
+	height: 65px;
+	cursor: pointer;
+	border-radius: 100px;
+	background:#38c10a;
+}
+.boxmsg .myform .goouter .go{
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: -55px;
+	width: 55px;
+	height: 55px;
+	cursor: pointer;
+	border-radius: 100px;
+	background:#fff url(../img/arrowlogin.png) 50%;
+}
+.boxmsg .closebtn{
+	display: block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	background: url(../img/colse.png);
+}
+.boxmsg .errormsg{
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+	color: #fff;
+}
+
+
+
+.nav{
+	background: #fff;
+}
+.nav-left li a{
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 18px;
+	color: #000;
+	
+}
+.nav-left li a:hover{
+	color: #31AB01 !important;
+}
+.nav-left li.active{
+	/*color: #fff;*/
+	background: #30bc01 !important;
+}
+.nav-left li.active a{
+	background: #30bc01 !important;
+	color: #fff !important;
+}
+.nav-right li:nth-child(1){
+	line-height: 50px;
+	color: #099;
+	font-size: 16px;
+}
+.nav-right li:nth-child(2){
+	margin-left: 10px;
+	line-height: 50px;
+	font-size: 16px;
+	cursor: pointer;
+	color: #666;
+}
+.nav-right li:nth-child(2):hover{
+	color: #31AB01
+}
+
+.headerimg{
+	width: 100%;
+	height: 100%;
+}
+.leftmsg{
+	margin-bottom: 30px;
+}
+
+	
+#backtop{
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 10;
+	display: block;
+	width: 55px;
+	height: 55px;
+	border-radius: 4px;
+	background:#7ed528 url(../img/backtop.png) center;
+}
+.footer{
+	position: relative;
+	clear: both;
+	padding-top: 10px;
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	border: 1px solid #eee;
+	background: #f8f8f8 url(../img/footer.png);
+}
+.footer p{
+	line-height: 20px;
+	width: 100%;
+	text-align: center;
+	color: #666;
+}

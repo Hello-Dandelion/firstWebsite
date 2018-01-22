@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			//alert(location.hash);// #1
+			//location.href = 'http://www.baidu.com';
+			//?id=12&page=13
+			function getArgs(){
+				var args = [];
+				var l = location.search.substring(1);// id=12&page=13
+				var s = l.split('&');//id=12,page=13
+				for (var i = 0; i < s.length; i++) {
+					var ss = s[i].split('=');
+					var name = ss[0]
+					var value = ss[1];
+					args[name] = value;
+				}
+				return args;
+			
+			}
+			var a = getArgs();
+			alert(a['id']);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

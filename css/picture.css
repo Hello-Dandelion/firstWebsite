@@ -1,0 +1,188 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font: 14px "微软雅黑";
+}
+
+
+.leftmsg .smalltitle{
+	margin-bottom: 10px;
+	float: left;
+	padding: 5px 0 5px 8px;
+	height: 29px;
+	color: #fff;
+	background: #7ed528;
+}
+.leftmsg .arrow{
+	float: left;
+	display: block;
+	width: 30px;
+	height: 29px;
+	background:url(../img/arrow.png);
+}
+.leftmsg .p{
+	width: 97%;
+	border-bottom: 2px solid #7ed528;
+}
+.leftmsg .p .updownbtn{
+	clear: both;
+	display: block;
+	padding-right: 15px;
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	text-align: right;
+	font-size: 18px;
+	cursor: pointer;
+	color: #fff;
+	background: #7ed528 url(../img/upload.png)no-repeat 10% center;
+}
+
+.leftmsg .picbox{
+	width: 100%;
+}
+.leftmsg .picbox{
+	width: 100%;
+}
+.leftmsg .picbox .pic{
+	float: left;
+	margin-right: 1.8%;
+	margin-bottom: 2%;
+	width: 31%;
+	border: 1px solid #999;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.leftmsg .picbox .pic img{
+	width: 100%;
+	border-bottom: 1px solid #999;
+}
+.leftmsg .picbox .pic p{
+	padding-top: 10px;
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+}
+@media (max-width: 2000px) and (min-width:767px){
+	.leftmsg{
+		float: left;
+		margin-left: 5%;
+		width: 63%;
+	}
+}
+@media (max-width: 2000px) and (min-width:1366px){
+	.leftmsg .picbox .pic img{
+		height: 220px;
+	}
+}
+@media (max-width: 1366px) and (min-width:1050px){
+	.leftmsg .picbox .pic img{
+		height: 180px;
+	}
+}
+@media (max-width: 1050px) and (min-width:920px){
+	.leftmsg .picbox .pic img{
+		height: 150px;
+	}
+}
+@media (max-width: 920px) and (min-width:767px){
+	.leftmsg .picbox .pic img{
+		height: 120px;
+	}
+}
+@media (max-width: 767px) and (min-width:360px){
+	.leftmsg{
+		float: left;
+		margin-left: 5%;
+		width: 90%;
+		height: auto;
+	}
+	.leftmsg .picbox .pic img{
+		height: 100px;
+	}
+}
+
+.file{
+	display: none;
+	position: fixed;
+	top: 15%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 5;
+	overflow: hidden;
+	overflow-y: auto;
+	width: 60%;
+	height: 70%;
+	border-radius: 3px;
+	background: #fff;
+}
+.file form{
+	margin: 0 auto;
+	height: 400px;
+}
+.file form span:nth-child(1){
+	float: left;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 24px;
+	text-align: center;
+	color: #fff;
+	border-bottom: 2px solid #7ed528;
+	background: #7ed528;
+}
+.file form span:nth-child(1) img{
+	margin-top: -5px;
+	cursor: pointer;
+}
+.file form span:nth-child(1) input{
+	position: relative;
+	left: 0;
+	top: -50px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer;
+}
+.file form img:nth-child(3){
+	margin-top: 2%;
+	margin-left: 20%;
+	width: 60%;
+	height: 80%;
+}
+.file form input:nth-child(4){
+	position: absolute;
+	top:90.5%;
+	left: 0;
+	width: 80px;
+	height: 40px;
+	font-size: 18px;
+	text-align: center;
+	color: #fff;
+	background: #7ed528;
+	border:none ;
+}
+.file p:nth-child(2){
+	position: absolute;
+	top: 92%;
+	left: 0;
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	text-align: center;
+	color: #f30;
+}
+.file button:nth-child(3){
+	position: absolute;
+	top: 90.5%;
+	right: 0;
+	width: 80px;
+	height: 40px;
+	font-size: 18px;
+	text-align: center;
+	color: #fff;
+	background: #7ed528;
+	border:none ;
+}
